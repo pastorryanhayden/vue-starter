@@ -1,0 +1,150 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.4.1/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="https://use.fontawesome.com/00d641a760.js"></script>
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas-content" data-off-canvas-content>  
+        <div class="content-wrapper">  
+    
+    <div class="site-wrapper">
+    <nav class="main">
+    <div class="nav-1">    
+        <ul class="utility-1">
+    
+        </ul><!--/utility-1-->
+        <ul class="nav-1 dropdown" data-dropdown-menu>
+            <li><a href="#">Welcome</a></li>
+            <li><a href="#">About Us</a>
+                <ul class="menu">
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Ministries</a>
+                <ul class="menu">
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!--nav-1-->
+    <h1 class="logo"><a href="#">Hartwell <span>Baptist Church</span></a></h1>
+    <div class="nav-2">
+        <ul class="utility-2">
+            <li><a href="info.html .service-times" data-featherlight="ajax"><i class="fa fa-clock-o"></i> Service Schedule</a></li>
+            <li><a href="info.html .contact" data-featherlight="ajax"><i class="fa fa-phone-square"></i> Contact Info</a></li>
+        </ul><!--/utility-2-->
+        <ul class="nav-2 dropdown" data-dropdown-menu>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Media</a>
+            <ul class="menu">
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div><!--/nav-2-->
+    </nav>
+    <nav class="mobile">
+        <h1 class="logo"><a href="#">Hartwell <span>Baptist Church</span></a></h1>
+        <div class="main-mobile-buttons">
+            <a href="info.html .info-box" data-featherlight="ajax"><i class="fa-question-circle fa"></i><br>Info</a>
+            <button type="button" data-toggle="offCanvas" class="side-menu"> <i class="fa-reorder fa"></i><br>Menu</button>
+        </div>
+    </nav>
+    <div class="off-canvas position-right mobile-sidebar" id="offCanvas" data-off-canvas data-position="right">
+        <ul class="vertical side-menu menu" data-accordion-menu>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">WELCOME</a></li>
+        <li><a href="#">ABOUT US</a>
+            <ul class="menu">
+                <li><a href="#">Item</a></li>
+            </ul>
+        </li><!--/End of About Us-->
+        <li><a href="#">MINISTRIES</a>
+            <ul class="menu">
+                <li><a href="#">Item</a></li>
+                    </ul>
+        </li><!--/ministries-->
+        <li><a href="#">CALENDAR</a></li>
+        <li><a href="#">MEDIA</a>
+            <ul class="menu">
+                <li><a href="#">Sermons</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </li><!--/media-->
+        <li><a href="#">CONTACT US</a></li>
+    </ul><!--.dropdown menu --></div><!--slideout menu-->
+    <div class="about-page" id="about-page">
+        <div class="header">
+        <h2 class="about-header"> About Us: <span>Our Pastor</span></h2>
+        <img src="http://placehold.it/1920x1080" alt="" class="featured_image">
+        </div><!-- /header -->
+        <div class="content">
+        <div class="main-content">
+            <p>{{message}}</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, saepe explicabo, veniam maxime, soluta, nam quos laudantium laboriosam quidem amet sunt aspernatur sint eveniet alias a inventore vel praesentium veritatis?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio sed excepturi eveniet nobis, fuga incidunt! Mollitia, quasi iusto nihil. Et quam eaque, repellat officia fuga modi quia. Debitis, fugiat, ratione.</p>
+        </div><!--/main-content-->
+        <div class="sidebar">
+            <h3 class="sidebar-header">More About Us</h3>
+            <div class="sidebar-text">
+                <ul class="menu vertical">
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div><!--/sidebar-text-->
+        </div><!--/sidebar-->
+        </div><!-- content -->
+    </div><!--/wrapper-->
+    
+    <script>
+        new Vue({
+      el: '#about-page',
+      data: {
+        message: 'Hello Vue.js!'
+      }
+    })
+    </script>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-info">
+            <h3>Hartwell Baptist Church</h3>
+            <p>The Friendly Church</p>
+            <div class="address">
+                <p><i class="fi-map"></i>  3401 Marion Ave. Mattoon, IL 61938 <br>
+                    <i class="fi-telephone"></i>  (217) 499-0822 <br>
+                    <i class="fi-mail"></i>   info@biblebaptistmattoon.org <br>
+                    <a href="#" title="sign in" class="footer-sign-in"><i class="fi-widget"></i> Manager Sign In</a>
+                </p>
+            </div><!--/address-->
+        </div><!--/footer-info-->
+        </div><!--/footer-wrapper-->
+    </footer>
+    </div><!--/ off canvas content wrapper-->
+    </div><!--/off canvas wrapper 2-->
+    </div><!--/ off canvas wrapper 1-->
+    </div><!--/content-wrapper-->
+    </div><!--/data-off-canvas-content-->
+    </div><!--/off canvas wrapper inner-->
+    </div><!--/off canvas wrapper-->
+    <script src="assets/js/app.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/vue.resource/0.9.3/vue-resource.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/0.7.10/vue-router.min.js"></script>
+
+  </body>
+</html>
